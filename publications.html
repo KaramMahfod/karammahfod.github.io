@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Publications — Karam Mahfod" />
+  <title>Publications | Karam Mahfod</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">KM</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+          Menu
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="about.html">About</a>
+          <a href="experience.html">Experience</a>
+          <a href="education.html">Education</a>
+          <a href="publications.html" aria-current="page">Publications</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn btn-small" href="files/CV28102025.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-head">
+          <h2>Publications</h2>
+          <p class="muted">
+            Research contributions in video coding, compression, and distributed systems. Click on a publication to view details.
+          </p>
+        </div>
+
+        <div class="stack">
+          <article class="card">
+            <button class="project-toggle" aria-expanded="false" style="width: 100%; text-align: left;">
+              <span class="project-name">H.265/HEVC Decoding via Iterative Recovery from Incomplete Quantized Measurements</span>
+              <span class="toggle-icon">▼</span>
+            </button>
+            <div class="project-details">
+              <div class="pub-meta" style="margin-bottom: 12px;">IEEE Signal Processing Letters, 2025.</div>
+              <p style="margin-bottom: 12px; color: var(--muted); line-height: 1.6;">
+                This paper reformulates H.265/HEVC video enhancement as a signal recovery task from incomplete transform-domain measurements and integrates a modified ISTA framework into the decoding process. By replacing matrix operations with codec-aware encoding/decoding operators and a neural thresholding stage, the method achieves up to 1 dB PSNR gain over state-of-the-art enhancement techniques.
+              </p>
+              <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/document/11215632" target="_blank" rel="noopener">View on IEEE Xplore</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="project-toggle" aria-expanded="false" style="width: 100%; text-align: left;">
+              <span class="project-name">Multi-Hypothesis Distributed Video Coding using Error-Correction Decoder Feedback</span>
+              <span class="toggle-icon">▼</span>
+            </button>
+            <div class="project-details">
+              <div class="pub-meta" style="margin-bottom: 12px;">IEEE DSPA, 2025.</div>
+              <p style="margin-bottom: 12px; color: var(--muted); line-height: 1.6;">
+                We propose a DVC method that selects the best side information using feedback from the error-correction decoder. By choosing the SI requiring the fewest syndrome bits for successful decoding, the system adapts to motion complexity and improves compression efficiency.
+              </p>
+              <div class="pub-links">
+                <a href="https://doi.org/10.1109/DSPA64310.2025.10977881" target="_blank" rel="noopener">View on IEEE Xplore</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="project-toggle" aria-expanded="false" style="width: 100%; text-align: left;">
+              <span class="project-name">Q-Learning Based Adaptive Multipath Routing Algorithm for Data Centre Networks</span>
+              <span class="toggle-icon">▼</span>
+            </button>
+            <div class="project-details">
+              <div class="pub-meta" style="margin-bottom: 12px;">IEEE RusAutoCon, 2024.</div>
+              <p style="margin-bottom: 12px; color: var(--muted); line-height: 1.6;">
+                Proposed a Q-learning algorithm for real-time multipath routing in data centers, improving latency and throughput over ECMP/WCMP with reduced complexity compared to deep reinforcement learning.
+              </p>
+              <div class="pub-links">
+                <a href="https://doi.org/10.1109/RusAutoCon61949.2024.10694010" target="_blank" rel="noopener">View on IEEE Xplore</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="project-toggle" aria-expanded="false" style="width: 100%; text-align: left;">
+              <span class="project-name">Inter-Frame and Inter-View Quality Enhancement in Distributed Multi-View Video Coding</span>
+              <span class="toggle-icon">▼</span>
+            </button>
+            <div class="project-details">
+              <div class="pub-meta" style="margin-bottom: 12px;">International Symposium on Problems of Redundancy in Information and Control Systems, 2025.</div>
+              <p style="margin-bottom: 12px; color: var(--muted); line-height: 1.6;">
+                Proposes decoder-side methods that jointly exploit temporal (inter-frame) and spatial (inter-view) correlations to improve reconstruction quality in distributed multi camera video systems.
+              </p>
+              <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/document/11301557" target="_blank" rel="noopener">View on IEEE Xplore</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div class="muted small">© <span id="year"></span> Karam Mahfod</div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="files/CV28102025.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Publication accordion functionality
+    document.querySelectorAll('.project-toggle').forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        const details = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.toggle-icon');
+        
+        toggle.setAttribute('aria-expanded', !isExpanded);
+        
+        if (isExpanded) {
+          details.style.maxHeight = null;
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          details.style.maxHeight = details.scrollHeight + 'px';
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

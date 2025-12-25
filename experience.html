@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Experience — Karam Mahfod" />
+  <title>Experience | Karam Mahfod</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">KM</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+          Menu
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="about.html">About</a>
+          <a href="experience.html" aria-current="page">Experience</a>
+          <a href="education.html">Education</a>
+          <a href="publications.html">Publications</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn btn-small" href="files/CV28102025.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p class="muted">Selected roles and outcomes. Click on a project to view details.</p>
+        </div>
+
+        <div class="stack">
+          <article class="card">
+            <div class="card-top">
+              <h3>AI & Computer Vision Engineer — Cradle Vision (Remote)</h3>
+              <div class="muted">Jun 2025 – Present</div>
+            </div>
+            
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">Real-Time Attendance Pipeline</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Developed and deployed a real-time AI pipeline for tracking, capable of processing more than <b>300 4K camera streams</b> simultaneously.</li>
+                  <li>Implemented ROI-based detection focused on entry and exit points to significantly reduce GPU load while maintaining high recognition accuracy.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">Python</span><span class="chip">C/C++</span><span class="chip">DeepStream</span><span class="chip">GStreamer</span><span class="chip">Triton Inference Server</span><span class="chip">TensorRT</span><span class="chip">ONNX</span><span class="chip">Kafka</span><span class="chip">Docker</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">Classroom Behavior Analysis</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Built a multi-model pipeline combining <b>pose estimation and action classification</b> to recognize various student behaviors (e.g., inattentive, distracted, bored) and analyze teacher–student interaction patterns during school lectures.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">OpenCV</span><span class="chip">DeepStream</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">Ongoing Enhancements</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Expanding the platform with new features such as <b>voice-based session summaries</b>, advanced multi-camera tracking, and improved inference performance for large-scale deployments.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">Python</span><span class="chip">C/C++</span><span class="chip">CMake</span><span class="chip">Make</span><span class="chip">Docker</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Research Engineer — ITMO University (Part-time)</h3>
+              <div class="muted">Dec 2023 – Present</div>
+            </div>
+            
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">AI-Based Image Compression (JPEG-AI)</span>
+                <span class="project-period">Dec 2024 – Present</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li><b>Project Description:</b> Research and development of next-generation neural image compression methods.</li>
+                  <li><b>Perceptual Quality Metric:</b> Developed a perceptual quality metric trained directly on <b>Mean Opinion Score (MOS)</b> and validated against subjective human evaluations. Achieved higher correlation with human perception compared to traditional metrics such as <b>VMAF, MS-SSIM, and PSNR</b>. (Patent under review)</li>
+                  <li><b>Compression Efficiency:</b> Achieved <b>25% bitrate reduction</b> for the 0.075 model and <b>31% reduction</b> for the 0.012 model compared to baseline methods, demonstrating significant gains in compression efficiency without perceptual quality loss.</li>
+                  <li><b>Training Strategy Research:</b> Investigated both <b>fixed-quality</b> and <b>fixed-bitrate</b> training paradigms to balance efficiency and visual fidelity across multiple model sizes.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">FFmpeg</span><span class="chip">Docker</span><span class="chip">LaTeX</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">H.265/HEVC-Based Transcoding System</span>
+                <span class="project-period">Dec 2023 – Dec 2024</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li><b>Perceptual Re-Compression:</b> Developed two architectures for perceptual <b>H.265/HEVC bitstream re-compression</b> by combining <b>OpenHEVC</b> and <b>x265</b> in a unified pipeline. Enabled parameter reuse from the input bitstream, achieving <b>50% faster</b> (Re-compressor) and <b>13% faster</b> (Transcoder) processing than the standard FFmpeg+x265 setup.</li>
+                  <li><b>Neural SUR Module:</b> Built a neural <b>Satisfied User Ratio (SUR)</b> predictor estimating ΔQP from block distortion and visibility, trained on <b>VideoSet (H.264)</b> and fine-tuned for <b>H.265/HEVC</b> re-compression.</li>
+                  <li><b>HVS-Based Color Pre-Filter:</b> Designed an <b>HVS-based pre-filter</b> operating in the CIELAB color space that detects perceptually insignificant chroma variations using <b>MacAdam ellipses</b> and ΔE₉₄ color difference. The filter preserves visually irrelevant details to improve compression efficiency without quality loss.</li>
+                  <li><b>Results:</b> Achieved <b>MOS = 0.37</b> with bitrate savings of <b>32.6% (Re-compressor)</b> and <b>34.1% (Transcoder)</b> per video, and <b>22.0% / 22.2%</b> on dataset level. With pre-filters enabled, reached <b>MOS = 0.45</b> and up to <b>42.8% / 40.4% bitrate reduction</b>, respectively.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">C/C++</span><span class="chip">CMake</span><span class="chip">Make</span><span class="chip">Python</span><span class="chip">OpenHEVC</span><span class="chip">x265</span><span class="chip">FFmpeg</span><span class="chip">Docker</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Software Engineer — H.265/HEVC Optimization, Vishare Technology (Remote, Hong Kong)</h3>
+              <div class="muted">Jun 2021 – Feb 2025</div>
+            </div>
+            
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">Codec Optimization</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Contributed to the design, optimization, and enhancement of <b>H.265/HEVC video codecs</b>, improving both <b>compression efficiency and runtime performance</b> across multiple platforms.</li>
+                  <li>Participated in redesigning critical encoder and decoder modules, optimizing rate-distortion decisions, motion estimation, and entropy coding.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">C/C++</span><span class="chip">x265</span><span class="chip">FFmpeg</span><span class="chip">GStreamer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">Performance Engineering</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Implemented advanced multithreading strategies and low-level optimizations to boost throughput and scalability.</li>
+                  <li>Enhanced pipeline concurrency and memory utilization, resulting in significant performance improvements under real-time and batch processing scenarios.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">C/C++</span><span class="chip">Multithreading</span><span class="chip">OpenMP</span><span class="chip">Pthreads</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">RISC-V Simulator Development</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Designed and implemented a feature-rich 32-bit <b>RISC-V simulator</b> supporting <b>multithreading, MESI cache coherence, branch prediction, and detailed performance profiling</b>, used internally to model hardware–software co-design scenarios for codec acceleration.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">C/C++</span><span class="chip">RISC-V</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">Profiling and System Tools</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Built custom profiling and debugging utilities using <b>GProf, Valgrind, and low-level instrumentation</b> to identify bottlenecks, guide optimization decisions, and validate system-level performance improvements.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">C/C++</span><span class="chip">GProf</span><span class="chip">Valgrind</span><span class="chip">Bash</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">System Integration and Deployment</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Contributed to <b>CI/CD workflows</b>, cross-platform builds, and automated testing pipelines.</li>
+                  <li>Worked extensively with containerized environments and continuous benchmarking to ensure robust, maintainable video compression solutions.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">Docker</span><span class="chip">Git</span><span class="chip">Bash</span><span class="chip">CMake</span><span class="chip">Make</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>C++ Developer — Network and Backend Systems, Syriatel (Damascus, Syria)</h3>
+              <div class="muted">Mar 2020 – May 2021</div>
+            </div>
+            
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">Real-Time Systems</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Developed backend C++ modules for telecom network management.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">C/C++</span><span class="chip">CMake</span><span class="chip">Make</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">Team Collaboration</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>Worked with cross-functional teams on feature delivery and debugging.</li>
+                </ul>
+                <div class="chips" style="margin-top: 12px;">
+                  <span class="chip">Git</span><span class="chip">Docker</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-accordion">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-name">Foundation Role</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="project-details">
+                <ul class="bullets">
+                  <li>First professional role post-graduation, providing exposure to large-scale systems.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div class="muted small">© <span id="year"></span> Karam Mahfod</div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="files/CV28102025.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Project accordion functionality
+    document.querySelectorAll('.project-toggle').forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        const details = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.toggle-icon');
+        
+        toggle.setAttribute('aria-expanded', !isExpanded);
+        
+        if (isExpanded) {
+          details.style.maxHeight = null;
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          details.style.maxHeight = details.scrollHeight + 'px';
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
