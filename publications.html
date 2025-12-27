@@ -60,6 +60,60 @@
               <p style="margin-bottom: 12px; color: var(--muted); line-height: 1.6;">
                 This paper reformulates H.265/HEVC video enhancement as a signal recovery task from incomplete transform-domain measurements and integrates a modified ISTA framework into the decoding process. By replacing matrix operations with codec-aware encoding/decoding operators and a neural thresholding stage, the method achieves up to 1 dB PSNR gain over state-of-the-art enhancement techniques.
               </p>
+              
+              <div style="margin: 20px 0;">
+                <div class="project-accordion">
+                  <button class="project-toggle results-toggle" aria-expanded="false" style="width: 100%; text-align: left;">
+                    <span class="project-name">Results</span>
+                    <span class="toggle-icon">▼</span>
+                  </button>
+                  <div class="project-details results-content">
+                    <div style="margin-bottom: 24px; overflow-x: auto;">
+                      <table class="results-table">
+                        <caption style="caption-side: top; margin-bottom: 8px; font-weight: 700; text-align: center;">BD-rate Results (% relative to Baseline (Base PSNR))</caption>
+                        <thead>
+                          <tr>
+                            <th>Sequence</th>
+                            <th>MFQE_2.0</th>
+                            <th>RFDA</th>
+                            <th>STDR</th>
+                            <th>CPGA</th>
+                            <th>Proposed_FBCNN</th>
+                            <th>Proposed_CPGA</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>BQMall (832x480)</td><td>-12.28</td><td>-19.83</td><td>-22.43</td><td>-20.36</td><td>-32.16</td><td>-35.09</td></tr>
+                          <tr><td>BQSquare (416x240)</td><td>-12.04</td><td>-20.78</td><td>-23.81</td><td>-21.19</td><td>-33.23</td><td>-36.24</td></tr>
+                          <tr><td>BQTerrace (1920x1080)</td><td>-25.71</td><td>-39.54</td><td>-44.26</td><td>-40.26</td><td>-60.59</td><td>-65.20</td></tr>
+                          <tr><td>BasketballDrill (832x480)</td><td>-11.48</td><td>-18.27</td><td>-20.78</td><td>-18.80</td><td>-30.07</td><td>-32.99</td></tr>
+                          <tr><td>BasketballDrive (1920x1080)</td><td>-19.76</td><td>-31.24</td><td>-34.91</td><td>-31.88</td><td>-49.80</td><td>-53.91</td></tr>
+                          <tr><td>BasketballPass (416x240)</td><td>-9.77</td><td>-15.59</td><td>-17.76</td><td>-15.24</td><td>-25.11</td><td>-27.58</td></tr>
+                          <tr><td>BlowingBubbles (416x240)</td><td>-10.99</td><td>-17.42</td><td>-19.78</td><td>-18.17</td><td>-28.48</td><td>-31.30</td></tr>
+                          <tr><td>Cactus (1920x1080)</td><td>-21.11</td><td>-32.62</td><td>-36.11</td><td>-33.00</td><td>-51.53</td><td>-55.43</td></tr>
+                          <tr><td>FourPeople (1280x720)</td><td>-15.74</td><td>-24.68</td><td>-27.35</td><td>-25.99</td><td>-38.59</td><td>-41.81</td></tr>
+                          <tr><td>Johnny (1280x720)</td><td>-21.73</td><td>-33.15</td><td>-36.46</td><td>-34.14</td><td>-50.79</td><td>-54.64</td></tr>
+                          <tr><td>Kimono (1920x1080)</td><td>-16.12</td><td>-25.84</td><td>-28.69</td><td>-25.96</td><td>-42.09</td><td>-45.71</td></tr>
+                          <tr><td>KristenAndSara (1280x720)</td><td>-18.61</td><td>-29.13</td><td>-32.17</td><td>-29.64</td><td>-44.33</td><td>-48.14</td></tr>
+                          <tr><td>ParkScene (1920x1080)</td><td>-14.68</td><td>-22.86</td><td>-25.79</td><td>-23.66</td><td>-37.93</td><td>-41.41</td></tr>
+                          <tr><td>PartyScene (832x480)</td><td>-10.15</td><td>-16.55</td><td>-18.97</td><td>-17.04</td><td>-28.01</td><td>-30.74</td></tr>
+                          <tr><td>PeopleOnStreet (2560x1600)</td><td>-11.47</td><td>-18.27</td><td>-20.65</td><td>-18.79</td><td>-29.21</td><td>-32.13</td></tr>
+                          <tr><td>RaceHorses (416x240)</td><td>-9.78</td><td>-15.50</td><td>-17.65</td><td>-15.74</td><td>-25.79</td><td>-28.28</td></tr>
+                          <tr><td>RaceHorses (832x480)</td><td>-10.98</td><td>-17.17</td><td>-19.56</td><td>-18.25</td><td>-30.16</td><td>-33.04</td></tr>
+                          <tr><td>Traffic (2560x1600)</td><td>-15.72</td><td>-24.39</td><td>-27.41</td><td>-24.96</td><td>-40.18</td><td>-44.08</td></tr>
+                          <tr style="font-weight: 800; border-top: 2px solid var(--line);"><td><b>Average</b></td><td><b>-14.90</b></td><td><b>-23.49</b></td><td><b>-26.36</b></td><td><b>-24.06</b></td><td><b>-37.67</b></td><td><b>-40.98</b></td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                      <img src="Figs/hevc_iterative_recovery/rd_curve_average.png" alt="Rate-Distortion curve average results" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--line); display: block; margin: 0 auto;" />
+                      <p style="text-align: center; margin-top: 8px; color: var(--muted); font-size: 13px;">Rate-Distortion curve average results</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="pub-links">
                 <a href="https://ieeexplore.ieee.org/document/11215632" target="_blank" rel="noopener">View on IEEE Xplore</a>
               </div>
@@ -76,6 +130,45 @@
               <p style="margin-bottom: 12px; color: var(--muted); line-height: 1.6;">
                 We propose a DVC method that selects the best side information using feedback from the error-correction decoder. By choosing the SI requiring the fewest syndrome bits for successful decoding, the system adapts to motion complexity and improves compression efficiency.
               </p>
+              
+              <div style="margin: 20px 0;">
+                <div class="project-accordion">
+                  <button class="project-toggle results-toggle" aria-expanded="false" style="width: 100%; text-align: left;">
+                    <span class="project-name">Results</span>
+                    <span class="toggle-icon">▼</span>
+                  </button>
+                  <div class="project-details results-content">
+                    <div style="margin-bottom: 24px; overflow-x: auto;">
+                      <table class="results-table">
+                        <caption style="caption-side: top; margin-bottom: 8px; font-weight: 700; text-align: center;">Bitrate Savings for GOP = 4</caption>
+                        <thead>
+                          <tr>
+                            <th>Algorithm</th>
+                            <th>Foreman</th>
+                            <th>Coastguard</th>
+                            <th>Hall</th>
+                            <th>Football</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Basic Linear</td><td>0.72%</td><td>-1.87%</td><td>0.75%</td><td>3.98%</td></tr>
+                          <tr><td>Bicubic</td><td>2.17%</td><td>-1.43%</td><td>1.18%</td><td>7.89%</td></tr>
+                          <tr><td>FILM</td><td>5.74%</td><td>1.19%</td><td>-2.48%</td><td>10.41%</td></tr>
+                          <tr><td>RIFE</td><td>-8.23%</td><td>6.33%</td><td>0.56%</td><td>6.41%</td></tr>
+                          <tr><td>DAIN</td><td>6.56%</td><td>4.78%</td><td>0.87%</td><td>8.54%</td></tr>
+                          <tr style="font-weight: 800; border-top: 2px solid var(--line);"><td><b>Proposed</b></td><td><b>6.75%</b></td><td><b>10.02%</b></td><td><b>1.42%</b></td><td><b>11.22%</b></td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                      <img src="Figs/Multi_Hypothesis_based_DVC/RDcomparisonofdifferentSWCs.PNG" alt="Rate-Distortion comparison of different SWCs" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--line); display: block; margin: 0 auto;" />
+                      <p style="text-align: center; margin-top: 8px; color: var(--muted); font-size: 13px;">Rate-Distortion comparison of different SWCs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="pub-links">
                 <a href="https://doi.org/10.1109/DSPA64310.2025.10977881" target="_blank" rel="noopener">View on IEEE Xplore</a>
               </div>
@@ -92,6 +185,27 @@
               <p style="margin-bottom: 12px; color: var(--muted); line-height: 1.6;">
                 Proposed a Q-learning algorithm for real-time multipath routing in data centers, improving latency and throughput over ECMP/WCMP with reduced complexity compared to deep reinforcement learning.
               </p>
+              
+              <div style="margin: 20px 0;">
+                <div class="project-accordion">
+                  <button class="project-toggle results-toggle" aria-expanded="false" style="width: 100%; text-align: left;">
+                    <span class="project-name">Results</span>
+                    <span class="toggle-icon">▼</span>
+                  </button>
+                  <div class="project-details results-content">
+                    <div style="margin-bottom: 20px;">
+                      <img src="Figs/QLearning_Based_ADRA/Throughput_under_Different_Network_Loads.PNG" alt="Throughput under Different Network Loads" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--line); display: block; margin: 0 auto;" />
+                      <p style="text-align: center; margin-top: 8px; color: var(--muted); font-size: 13px;">Throughput under Different Network Loads</p>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                      <img src="Figs/QLearning_Based_ADRA/Transmission_Delay_under_Different_Network_Loads.PNG" alt="Transmission Delay under Different Network Loads" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--line); display: block; margin: 0 auto;" />
+                      <p style="text-align: center; margin-top: 8px; color: var(--muted); font-size: 13px;">Transmission Delay under Different Network Loads</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="pub-links">
                 <a href="https://doi.org/10.1109/RusAutoCon61949.2024.10694010" target="_blank" rel="noopener">View on IEEE Xplore</a>
               </div>
@@ -108,6 +222,24 @@
               <p style="margin-bottom: 12px; color: var(--muted); line-height: 1.6;">
                 Proposes decoder-side methods that jointly exploit temporal (inter-frame) and spatial (inter-view) correlations to improve reconstruction quality in distributed multi camera video systems.
               </p>
+              
+              <div style="margin: 20px 0;">
+                <div class="project-accordion">
+                  <button class="project-toggle results-toggle" aria-expanded="false" style="width: 100%; text-align: left;">
+                    <span class="project-name">Results</span>
+                    <span class="toggle-icon">▼</span>
+                  </button>
+                  <div class="project-details results-content">
+                    <div style="margin-bottom: 20px;">
+                      <img src="Figs/Interframe_and_Interview_Quality_Enhancement_in_DMVC/RD_curves_per_sequence.PNG" alt="RD curves (VMAF vs bpp) per sequence" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--line); display: block; margin: 0 auto;" />
+                      <p style="text-align: center; margin-top: 8px; color: var(--muted); font-size: 13px;">
+                        RD curves (VMAF vs bpp) per sequence. Blue: MVC. Red: D-MVC. Solid: Raw. Dashed: Proposed method.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="pub-links">
                 <a href="https://ieeexplore.ieee.org/document/11301557" target="_blank" rel="noopener">View on IEEE Xplore</a>
               </div>
@@ -130,24 +262,121 @@
 
   <script src="assets/js/main.js"></script>
   <script>
-    // Publication accordion functionality
-    document.querySelectorAll('.project-toggle').forEach(toggle => {
-      toggle.addEventListener('click', () => {
-        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-        const details = toggle.nextElementSibling;
-        const icon = toggle.querySelector('.toggle-icon');
-        
-        toggle.setAttribute('aria-expanded', !isExpanded);
-        
-        if (isExpanded) {
-          details.style.maxHeight = null;
-          icon.style.transform = 'rotate(0deg)';
-        } else {
-          details.style.maxHeight = details.scrollHeight + 'px';
-          icon.style.transform = 'rotate(180deg)';
+    (function() {
+      // Initialize all results-content divs to be collapsed on page load
+      document.querySelectorAll('.results-content').forEach(details => {
+        if (details.style.maxHeight === '' || details.style.maxHeight === 'none') {
+          details.style.maxHeight = '0px';
         }
+        details.style.overflow = 'hidden';
+        details.style.padding = '0 16px';
       });
-    });
+
+      // Publication accordion functionality
+      document.querySelectorAll('.project-toggle').forEach(toggle => {
+        // Skip results-toggle buttons - they have their own handler
+        if (toggle.classList.contains('results-toggle')) return;
+        
+        toggle.addEventListener('click', () => {
+          const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+          const details = toggle.nextElementSibling;
+          const icon = toggle.querySelector('.toggle-icon');
+          
+          if (!details) return;
+          
+          toggle.setAttribute('aria-expanded', !isExpanded);
+          
+          if (isExpanded) {
+            // Collapse parent - also collapse any nested results sections
+            details.style.maxHeight = null;
+            icon.style.transform = 'rotate(0deg)';
+            
+            // Find and collapse any nested results sections
+            const nestedResults = details.querySelectorAll('.results-content');
+            const nestedResultsToggles = details.querySelectorAll('.results-toggle');
+            
+            nestedResults.forEach(resultContent => {
+              resultContent.style.maxHeight = '0px';
+            });
+            
+            nestedResultsToggles.forEach(resultToggle => {
+              resultToggle.setAttribute('aria-expanded', 'false');
+              const resultIcon = resultToggle.querySelector('.toggle-icon');
+              if (resultIcon) {
+                resultIcon.style.transform = 'rotate(0deg)';
+              }
+            });
+          } else {
+            details.style.maxHeight = details.scrollHeight + 'px';
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+
+      // Results accordion functionality (nested inside publication)
+      document.querySelectorAll('.results-toggle').forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+          e.stopPropagation(); // Prevent triggering parent accordion
+          
+          const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+          const details = toggle.nextElementSibling;
+          const icon = toggle.querySelector('.toggle-icon');
+          
+          if (!details) return;
+          
+          toggle.setAttribute('aria-expanded', !isExpanded);
+          
+          if (isExpanded) {
+            // Collapse
+            details.style.maxHeight = '0px';
+            icon.style.transform = 'rotate(0deg)';
+            
+            // Recalculate parent height without results
+            const parentPublicationDetails = toggle.closest('article').querySelector('.project-details:not(.results-content)');
+            if (parentPublicationDetails) {
+              // Wait a bit for collapse animation, then recalculate
+              setTimeout(() => {
+                const currentParentHeight = parentPublicationDetails.scrollHeight;
+                parentPublicationDetails.style.maxHeight = currentParentHeight + 'px';
+              }, 350);
+            }
+          } else {
+            // Expand - find parent first
+            const parentPublicationDetails = toggle.closest('article').querySelector('.project-details:not(.results-content)');
+            const savedParentMaxHeight = parentPublicationDetails ? parentPublicationDetails.style.maxHeight : null;
+            
+            // Step 1: Remove parent constraint completely
+            if (parentPublicationDetails) {
+              parentPublicationDetails.style.maxHeight = 'none';
+              parentPublicationDetails.style.overflow = 'visible';
+            }
+            
+            // Step 2: Expand results section
+            details.style.padding = '0 16px';
+            details.style.overflow = 'hidden';
+            details.style.display = 'block';
+            details.style.maxHeight = '5000px';
+            
+            // Step 3: Force browser to render
+            void details.offsetHeight;
+            void parentPublicationDetails?.offsetHeight;
+            
+            // Step 4: Measure full height and set parent (with extra padding to ensure full visibility)
+            if (parentPublicationDetails) {
+              // Wait a bit for rendering, then measure
+              setTimeout(() => {
+                const fullParentHeight = parentPublicationDetails.scrollHeight;
+                // Add extra padding (50px) to ensure the full image is visible
+                parentPublicationDetails.style.maxHeight = (fullParentHeight + 50) + 'px';
+                parentPublicationDetails.style.overflow = 'hidden';
+              }, 100);
+            }
+            
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+    })();
   </script>
 </body>
 </html>
